@@ -1,0 +1,8 @@
+<div class="container p-5 text-center">
+  <H1>My Restaurant page by #Gaudou</H1>
+  <div class="card p-2 m-2">
+    <h1> <%= @restaurant.name %> , ( <%= @restaurant.category %> ) </h1>
+    <h3> Address : <%= @restaurant.address %> </h3>
+  </div>
+  <p><%= link_to 'Back to Home', restaurants_path %></p>
+</div>

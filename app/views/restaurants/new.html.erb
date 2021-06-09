@@ -1,0 +1,12 @@
+<div class="container p-5 text-center">
+  <H1>Add a New Restaurant</H1>
+  <div class="">
+    <%= simple_form_for (@restaurant) do |r| %>
+      <%= r.input :name %>
+      <%= r.input :address %>
+      <%= r.input :category %>
+      <%= r.submit "Submit restaurant", class: "btn btn-secondary mt-3" %>
+    <% end %>
+  </div>
+   <p><%= link_to 'Back to Home', restaurants_path, class: "btn btn-danger mt-3" %></p>
+</div>

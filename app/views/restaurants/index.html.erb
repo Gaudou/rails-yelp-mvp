@@ -1,0 +1,11 @@
+<div class="container p-5 text-center">
+  <H1>My Restaurant page by #Gaudou</H1>
+    <% @restaurants.each do |restaurant| %>
+    <div class="card p-2 m-2">
+      <h1> <%= restaurant.name %> </h1>
+      <p><%= link_to 'More', restaurant_path(restaurant) %></p>
+    </div>
+    <% end %>
+      <%= link_to 'Add a restaurant', new_restaurant_path, :class => 'btn btn-secondary'%>
+</div>
+
